@@ -1,11 +1,3 @@
----
-title: "Course Project: Exploratory Data Analysis"
-output: github_document
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 
 #Course Project: Exploratory Data Analysis
 
@@ -13,17 +5,73 @@ This project looks at air pollutant data in the United States between 1999 to 20
 The study attempts to answer the following questions using Exploratory Data Analysis techniques with R.
 
 1. Have total emissions from PM2.5 decreased in the United States from 1999 to 2008? 
+![plot1](https://github.com/paul-rs/ExploratoryAnalysis-CourseProject2/blob/master/plots/plot1.png)
 
 2. Have total emissions from PM2.5 decreased in the Baltimore City, Maryland (fips == "24510") from 1999 to 2008? 
+![plot2](https://github.com/paul-rs/ExploratoryAnalysis-CourseProject2/blob/master/plots/plot2.png)
 
 3. Of the four types of sources indicated by the type (point, nonpoint, onroad, nonroad) variable, which of these four sources have seen decreases in emissions from 1999-2008 for Baltimore City? Which have seen increases in emissions from 1999-2008? 
+![plot3](https://github.com/paul-rs/ExploratoryAnalysis-CourseProject2/blob/master/plots/plot3.png)
 
 4. Across the United States, how have emissions from coal combustion-related sources changed from 1999-2008?
+![plot4](https://github.com/paul-rs/ExploratoryAnalysis-CourseProject2/blob/master/plots/plot4.png)
 
 5. How have emissions from motor vehicle sources changed from 1999-2008 in Baltimore City?
+![plot5](https://github.com/paul-rs/ExploratoryAnalysis-CourseProject2/blob/master/plots/plot5.png)
 
 6. Compare emissions from motor vehicle sources in Baltimore City with emissions from motor vehicle sources in Los Angeles County, California (fips == "06037"). Which city has seen greater changes over time in motor vehicle emissions?
+![plot6](https://github.com/paul-rs/ExploratoryAnalysis-CourseProject2/blob/master/plots/plot6.png)
+
+#Instructions
+
+In order to run the R scripts, the following packages should be installed:
+
+* data.table
+* dplyr
+* ggplot2
+* R.Utils
+
+1. Download all the .R scripts into your working directory.
+2. Source all the .R scripts.
+  ```{r eval=FALSE}
+  source('<working_directory>/loadData.R')
+  ```
+  
+  ```{r eval=FALSE}
+  source('<working_directory>/plot1.R')
+  ```
+  
+  ```{r eval=FALSE}
+  source('<working_directory>/plot2.R')
+  ```
+  
+  ```{r eval=FALSE}
+  source('<working_directory>/plot3.R')
+  ```
+  
+  ```{r eval=FALSE}
+  source('<working_directory>/plot4.R')
+  ```
+  
+  ```{r eval=FALSE}
+  source('<working_directory>/plot5.R')
+  ```
+  
+  ```{r eval=FALSE}
+  source('<working_directory>/plot6.R')
+  ```
+3. Call the plotting functions.
 
 
+  ```{r eval=FALSE}
+  plot1()
+  plot2()
+  plot3()
+  plot4()
+  plot5()
+  plot6()
+  ```
+4. The plots will be saved as .png files in your working directory.  
 
+    
 
