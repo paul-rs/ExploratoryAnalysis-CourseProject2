@@ -10,13 +10,6 @@ downloadData <- function(destination) {
 	}
 }
 
-unloadData <- function() {
-	if (exists("exdata_summary"))
-		rm(exdata_summary, envir = as.environment(".GlobalEnv"))
-	if (exists("classification_data"))
-		rm(classification_data, envir = as.environment(".GlobalEnv"))
-}
-
 loadData <- function(directory = ".", unload = FALSE) {
 	destination			<- filePath(directory, "exdata.zip")
 	summary_file		<- filePath(directory, "summarySCC_PM25.rds")
@@ -46,3 +39,10 @@ loadData <- function(directory = ".", unload = FALSE) {
 		exdata_summary <<- readRDS(summary_file)
 	}
 }
+
+unloadData <- function() {
+   	if (exists("exdata_summary"))
+	  		rm(exdata_summary, envir = as.environment(".GlobalEnv"))
+   	if (exists("classification_data"))
+	  		rm(classification_data, envir = as.environment(".GlobalEnv"))
+	}
