@@ -35,11 +35,23 @@ In order to run the R scripts, the following packages should be installed:
 2. Source all the .R scripts.
   ```{r eval=FALSE}
   source('<working_directory>/loadData.R')
+  ```
+  ```{r eval=FALSE}
   source('<working_directory>/plot1.R')
+  ```
+  ```{r eval=FALSE}
   source('<working_directory>/plot2.R')
+  ```
+  ```{r eval=FALSE}
   source('<working_directory>/plot3.R')
+  ```
+  ```{r eval=FALSE}
   source('<working_directory>/plot4.R')
+  ```
+  ```{r eval=FALSE}
   source('<working_directory>/plot5.R')
+  ```
+  ```{r eval=FALSE}
   source('<working_directory>/plot6.R')
   ```
 3. Call the plotting functions.
