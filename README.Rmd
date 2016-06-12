@@ -34,24 +34,24 @@ In order to run the R scripts, the following packages should be installed:
 1. Download all the .R scripts into your working directory.
 2. Source all the .R scripts.
   ```{r eval=FALSE}
-    source('<working_directory>/loadData.R')
-    source('<working_directory>/plot1.R')
-    source('<working_directory>/plot2.R')
-    source('<working_directory>/plot3.R')
-    source('<working_directory>/plot4.R')
-    source('<working_directory>/plot5.R')
-    source('<working_directory>/plot6.R')
+  source('<working_directory>/loadData.R')
+  source('<working_directory>/plot1.R')
+  source('<working_directory>/plot2.R')
+  source('<working_directory>/plot3.R')
+  source('<working_directory>/plot4.R')
+  source('<working_directory>/plot5.R')
+  source('<working_directory>/plot6.R')
   ```
 3. Call the plotting functions.
 
 
   ```{r eval=FALSE}
-    plot1()
-    plot2()
-    plot3()
-    plot4()
-    plot5()
-    plot6()
+  plot1()
+  plot2()
+  plot3()
+  plot4()
+  plot5()
+  plot6()
   ```
 4. The plots will be saved as .png files in your working directory.  
 
